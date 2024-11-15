@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .user-message {
+            background-color: #e3f2fd;
+        }
+        .ai-message {
+            background-color: #f5f5f5;
+        }
+        #recordButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .recording {
+            background-color: #ff4444;
+            color: white;
+        }
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .processing {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 8px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .speaking-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            margin-left: 8px;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Voice Chat</h1>
+    <div class="chat-container" id="chatContainer"></div>
+    <div class="controls">
+        <button id="recordButton">Start Recording</button>
+        <span id="statusIndicator" class="status-indicator"></span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

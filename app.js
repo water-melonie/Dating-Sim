@@ -4,7 +4,7 @@ class VoiceChat {
         this.isRecording = false;
         this.mediaRecorder = null;
         this.audioChunks = [];
-        this.openAIKey = 'sk-SnU-SwhQMX01GriHR_gQsmg56UYBDfzbhqTkvQI9j9T3BlbkFJMM26S2R1UVvOGd-cJOIIY92mc0nIW3BkU2BryU8AsA';
+        this.openAIKey = 'temp';
         this.currentAudio = null;
         
         this.recordButton = document.getElementById('recordButton');

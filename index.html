@@ -79,13 +79,57 @@
             50% { opacity: 0.4; }
             100% { opacity: 1; }
         }
+        .api-key-container {
+            display: flex;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        #apiKeyInput {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #saveApiKeyButton {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .voice-selector {
+            margin-top: 10px;
+        }
+        #voiceSelect {
+            padding: 8px;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>AI Voice Chat</h1>
+    
+    <div class="api-key-container">
+        <input type="password" id="apiKeyInput" placeholder="Enter your OpenAI API Key">
+        <button id="saveApiKeyButton">Save API Key</button>
+    </div>
+
+    <div class="voice-selector">
+        Voice: 
+        <select id="voiceSelect">
+            <option value="alloy">Alloy</option>
+            <option value="echo">Echo</option>
+            <option value="fable">Fable</option>
+            <option value="onyx">Onyx</option>
+            <option value="nova">Nova</option>
+            <option value="shimmer">Shimmer</option>
+        </select>
+    </div>
+
     <div class="chat-container" id="chatContainer"></div>
     <div class="controls">
-        <button id="recordButton">Start Recording</button>
+        <button id="recordButton" disabled>Start Recording</button>
         <span id="statusIndicator" class="status-indicator"></span>
     </div>
 

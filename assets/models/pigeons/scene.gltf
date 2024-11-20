@@ -1,0 +1,668 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 5650,
+      "max": [
+        236.56898498535156,
+        117.69660186767578,
+        98.7835693359375
+      ],
+      "min": [
+        -236.56898498535156,
+        -117.69660186767578,
+        -98.7835693359375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 67800,
+      "componentType": 5126,
+      "count": 5650,
+      "max": [
+        0.9999737739562988,
+        0.9994910359382629,
+        0.9998500347137451
+      ],
+      "min": [
+        -0.999973714351654,
+        -0.9974838495254517,
+        -0.9999995827674866
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 5650,
+      "max": [
+        0.9505000114440918,
+        0.9924299716949463
+      ],
+      "min": [
+        0.007569999899715185,
+        0.007569999899715185
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 29994,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 135600,
+      "componentType": 5126,
+      "count": 4127,
+      "max": [
+        126.31199645996094,
+        40.65659713745117,
+        96.96302032470703
+      ],
+      "min": [
+        -126.31199645996094,
+        -40.0783805847168,
+        -96.96302032470703
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 185124,
+      "componentType": 5126,
+      "count": 4127,
+      "max": [
+        0.9972485303878784,
+        0.9999973773956299,
+        0.9998804926872253
+      ],
+      "min": [
+        -0.9998947381973267,
+        -0.9999633431434631,
+        -0.9999665021896362
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 45200,
+      "componentType": 5126,
+      "count": 4127,
+      "max": [
+        0.9673640131950378,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 119976,
+      "componentType": 5125,
+      "count": 21072,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 234648,
+      "componentType": 5126,
+      "count": 4127,
+      "max": [
+        155.2219696044922,
+        49.20652389526367,
+        119.15607452392578
+      ],
+      "min": [
+        -155.2219696044922,
+        -50.00688171386719,
+        -119.15607452392578
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 284172,
+      "componentType": 5126,
+      "count": 4127,
+      "max": [
+        0.9972518086433411,
+        0.9999638199806213,
+        0.9998804926872253
+      ],
+      "min": [
+        -0.9998914003372192,
+        -0.9999963641166687,
+        -0.9999665021896362
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 78216,
+      "componentType": 5126,
+      "count": 4127,
+      "max": [
+        0.9673640131950378,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 204264,
+      "componentType": 5125,
+      "count": 21072,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 333696,
+      "componentType": 5126,
+      "count": 5650,
+      "max": [
+        170.92930603027344,
+        233.5023193359375,
+        113.16990661621094
+      ],
+      "min": [
+        -159.72003173828125,
+        -230.14425659179688,
+        -110.78337860107422
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 401496,
+      "componentType": 5126,
+      "count": 5650,
+      "max": [
+        0.9972334504127502,
+        0.9997376799583435,
+        0.9999960660934448
+      ],
+      "min": [
+        -0.9999515414237976,
+        -0.9999579191207886,
+        -0.9999142289161682
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 111232,
+      "componentType": 5126,
+      "count": 5650,
+      "max": [
+        0.9505000114440918,
+        0.9924299716949463
+      ],
+      "min": [
+        0.007569999899715185,
+        0.007569999899715185
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 288552,
+      "componentType": 5125,
+      "count": 29994,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Stephengury (https://sketchfab.com/Stephengury)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/pigeons-d8b0f6155ff9433aaf750ac706515aad",
+      "title": "Pigeons"
+    },
+    "generator": "Sketchfab-15.32.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 408528,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 156432,
+      "byteOffset": 408528,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 469296,
+      "byteOffset": 564960,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1034256,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/pigeon01_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/pigeon02_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/pigeon03_diffuse.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.8,
+            0.8,
+            0.8,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.0,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "pigeon01"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.8,
+            0.8,
+            0.8,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 1
+          },
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "pigeon02"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.8,
+            0.8,
+            0.8,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 2
+          },
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "pigeon03"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.8,
+            0.8,
+            0.8,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.4,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "pigeon04"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "pigeon01_pigeon01_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "pigeon02_pigeon02_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "pigeon03_pigeon03_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "pigeon04_pigeon04_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.0010000000474974513,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0010000000474974513,
+        0.0,
+        0.0,
+        -0.0010000000474974513,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "pigeon.FBX"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        0.02232286635153684,
+        7.737986771580405e-18,
+        -0.06602608201280027,
+        0.0,
+        -0.06602608201280027,
+        1.547597354316081e-17,
+        -0.022322866351536838,
+        0.0,
+        7.737986771580405e-18,
+        0.06969758868217468,
+        1.547597354316081e-17,
+        0.0,
+        7.045928955078125,
+        7.106209754943848,
+        17.118881225585938,
+        1.0
+      ],
+      "name": "pigeon01"
+    },
+    {
+      "mesh": 0,
+      "name": "pigeon01_pigeon01_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        0.04852982559366435,
+        0.0,
+        -0.05002609215157751,
+        0.0,
+        -0.05002609215157751,
+        0.0,
+        -0.04852982559366436,
+        0.0,
+        0.0,
+        0.06969758868217468,
+        0.0,
+        0.0,
+        2.7208175659179688,
+        6.957573890686035,
+        -31.010711669921875,
+        1.0
+      ],
+      "name": "pigeon02"
+    },
+    {
+      "mesh": 1,
+      "name": "pigeon02_pigeon02_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        0.06342210626611508,
+        0.0,
+        -0.028903119293239115,
+        0.0,
+        -0.028903119293239115,
+        0.0,
+        -0.06342210626611508,
+        0.0,
+        0.0,
+        0.06969758868217468,
+        0.0,
+        0.0,
+        18.082534790039063,
+        8.489785194396973,
+        -9.418380737304688,
+        1.0
+      ],
+      "name": "pigeon03"
+    },
+    {
+      "mesh": 2,
+      "name": "pigeon03_pigeon03_0"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        0.06737293508678324,
+        0.0,
+        -0.017850531810052476,
+        0.0,
+        -0.017850531810052476,
+        0.0,
+        -0.06737293508678324,
+        0.0,
+        0.0,
+        0.06969758868217468,
+        0.0,
+        0.0,
+        20.309860229492188,
+        21.21263885498047,
+        -18.295318603515625,
+        1.0
+      ],
+      "name": "pigeon04"
+    },
+    {
+      "mesh": 3,
+      "name": "pigeon04_pigeon04_0"
+    },
+    {
+      "children": [
+        12
+      ],
+      "matrix": [
+        0.01934078314357557,
+        -6.122088642122189e-17,
+        0.9998129495597631,
+        0.0,
+        6.122088642122174e-17,
+        1.0,
+        6.004805854887852e-17,
+        0.0,
+        -0.9998129495597631,
+        6.004805854887837e-17,
+        0.01934078314357557,
+        0.0,
+        -102.54739379882813,
+        21.606035232543945,
+        -2.8200924396514893,
+        1.0
+      ],
+      "name": "Camera001"
+    },
+    {
+      "name": "Object_12"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

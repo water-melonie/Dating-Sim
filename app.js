@@ -22,7 +22,7 @@ class VoiceChat {
     }
 
     checkSavedApiKey() {
-        const savedApiKey = localStorage.getItem('openai-api-key');
+        const savedApiKey = sessionStorage.getItem('openai-api-key');
         if (savedApiKey) {
             this.apiKeyInput.value = savedApiKey;
             this.enableRecording();
@@ -38,7 +38,7 @@ class VoiceChat {
                 return;
             }
 
-            localStorage.setItem('openai-api-key', apiKey);
+            sessionStorage.setItem('openai-api-key', apiKey);
             this.enableRecording();
             this.setStatus('API Key Saved Successfully', 'info');
         } else {

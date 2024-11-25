@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Dating Sim</title>
+    <link rel="icon" type="image/x-icon" href="icon.PNG">
+    <meta name="Aframe Scene" content="Dating Sim" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    
+    <a-scene>
+        <a-assets>
+            <img id="skytexture" src="images/sky.JPG">
+            <img id="groundtexture" src="images/grass2.jpg">
+            <img id="alex" src = "images/alex.PNG">
+        </a-assets>
+
+      <a-box position="-0.7 0 0" rotation="0 0 0" width="3.5" color="#cf9a43"></a-box>
+      <a-curvedimage src="#alex" height="7" radius="2" theta-length="70" rotation="0 100 0" scale="1 1 1"></a-curvedimage>
+      <a-plane src="#alex" height="50" width="50" rotation="90 0 0"></a-plane>
+      <a-entity environment="preset: forest; dressingAmount: 500" ></a-entity>
+      <!-- <a-plane src="#groundtexture" position="0 0 -10" rotation="-90 0 0" width="50" height="50" color="#4b923a"></a-plane> -->
+      <a-sky src="#skytexture"></a-sky>
+    </a-scene>
+  </body>
+</html>

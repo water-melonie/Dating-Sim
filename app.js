@@ -8,7 +8,6 @@ class VoiceChat {
         // DOM Elements
         this.recordButton = document.getElementById('recordButton');
         this.chatContainer = document.getElementById('chatContainer');
-        this.aframeContainer = document.getElementById('user-response')
         this.statusIndicator = document.getElementById('statusIndicator');
         this.apiKeyInput = document.getElementById('apiKeyInput');
         this.saveApiKeyButton = document.getElementById('saveApiKeyButton');
@@ -117,7 +116,7 @@ class VoiceChat {
     }
 
     async processAudioAndGetResponse(audioBlob) {
-        const apiKey = localStorage.getItem('openai-api-key');
+        const apiKey = sessionStorage.getItem('openai-api-key');
         if (!apiKey) {
             this.setStatus('Please save your API key', 'error');
             return;

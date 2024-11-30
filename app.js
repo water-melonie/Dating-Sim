@@ -219,7 +219,6 @@ class VoiceChat {
         messageDiv.classList.add('message', `${sender}-message`);
         messageDiv.textContent = text;
         this.chatContainer.appendChild(messageDiv);
-        textElement.setAttribute('value', messageDiv);
         this.chatContainer.scrollTop = this.chatContainer.scrollHeight;
         return messageDiv;
     }

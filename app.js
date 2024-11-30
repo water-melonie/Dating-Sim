@@ -8,6 +8,7 @@ class VoiceChat {
         // DOM Elements
         this.recordButton = document.getElementById('recordButton');
         this.chatContainer = document.getElementById('chatContainer');
+        this.aframeContainer = document.getElementById('user-response')
         this.statusIndicator = document.getElementById('statusIndicator');
         this.apiKeyInput = document.getElementById('apiKeyInput');
         this.saveApiKeyButton = document.getElementById('saveApiKeyButton');
@@ -218,6 +219,7 @@ class VoiceChat {
         messageDiv.classList.add('message', `${sender}-message`);
         messageDiv.textContent = text;
         this.chatContainer.appendChild(messageDiv);
+        textElement.setAttribute('value', messageDiv);
         this.chatContainer.scrollTop = this.chatContainer.scrollHeight;
         return messageDiv;
     }

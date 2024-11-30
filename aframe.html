@@ -22,8 +22,17 @@
       <a-box position="-0.7 0 0" rotation="0 0 0" width="4" color="#cf9a43"></a-box>
       <a-curvedimage src="#alex" height="4" radius="1.5" position="-1 2 -1" theta-length="70" rotation="0 155 0" scale="1 1 1"></a-curvedimage>
       <a-entity environment="preset: forest; dressingAmount: 500" ></a-entity>
+
+      <a-text id="user-response" value="...Hello?" position = "0 3.5 -2.3" width="3" color="green"></a-text>
+      <a-text id="ai-response" value="Hey, nice to meet you, my name is Alex!" position = "0 3.1 -2.3" width="3" color="blue"></a-text>
       
+      <a-box id="voice-input-button" position="0.5 2.4 -2.3" width="1" height="0.4" depth="0.2" color="green" event-set__mouseenter="color: yellow" event-set__mouseleave="color: green" 
+      class="clickable">
+        <a-text value="Respond" position="-0.45 0 0.1" color="white"></a-text>
+      </a-box>
+
       <!-- Pigeon section :) -->
+
       <a-entity
         gltf-model="#pigeonModel"
         position="-1 1 -1"

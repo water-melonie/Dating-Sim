@@ -1,17 +1,55 @@
-// app.js
 class VoiceChat {
     constructor() {
         this.isRecording = false;
         this.mediaRecorder = null;
         this.audioChunks = [];
-        this.openAIKey = 'temp';
         this.currentAudio = null;
         
+        // DOM Elements
         this.recordButton = document.getElementById('recordButton');
         this.chatContainer = document.getElementById('chatContainer');
         this.statusIndicator = document.getElementById('statusIndicator');
+        this.apiKeyInput = document.getElementById('apiKeyInput');
+        this.saveApiKeyButton = document.getElementById('saveApiKeyButton');
+        this.voiceSelect = document.getElementById('voiceSelect');
         
+        // Event Listeners
         this.recordButton.addEventListener('click', () => this.toggleRecording());
+        this.saveApiKeyButton.addEventListener('click', () => this.saveApiKey());
+        
+        // Check for saved API key
+        this.checkSavedApiKey();
+    }
+
+    checkSavedApiKey() {
+        const savedApiKey = sessionStorage.getItem('openai-api-key');
+        if (savedApiKey) {
+            this.apiKeyInput.value = savedApiKey;
+            this.enableRecording();
+        }
+    }
+
+    saveApiKey() {
+        const apiKey = this.apiKeyInput.value.trim();
+        if (apiKey) {
+            // Basic validation of API key format
+            if (apiKey.length < 20) {
+                this.setStatus('Invalid API key', 'error');
+                return;
+            }
+
+            sessionStorage.setItem('openai-api-key', apiKey);
+            this.enableRecording();
+            this.setStatus('API Key Saved Successfully', 'info');
+        } else {
+            this.setStatus('Please enter an API key', 'error');
+        }
+    }
+
+    enableRecording() {
+        this.recordButton.disabled = false;
+        this.recordButton.textContent = 'Start Recording';
+        this.init();
     }
 
     async init() {
@@ -78,6 +116,12 @@ class VoiceChat {
     }
 
     async processAudioAndGetResponse(audioBlob) {
+        const apiKey = localStorage.getItem('openai-api-key');
+        if (!apiKey) {
+            this.setStatus('Please save your API key', 'error');
+            return;
+        }
+
         const formData = new FormData();
         formData.append('file', audioBlob, 'audio.wav');
         formData.append('model', 'whisper-1');
@@ -88,7 +132,7 @@ class VoiceChat {
             const transcriptionResponse = await fetch('https://api.openai.com/v1/audio/transcriptions', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${this.openAIKey}`
+                    'Authorization': `Bearer ${apiKey}`
                 },
                 body: formData
             });
@@ -102,11 +146,11 @@ class VoiceChat {
             const completionResponse = await fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${this.openAIKey}`,
+                    'Authorization': `Bearer ${apiKey}`,
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    model: 'gpt-4-turbo-preview',
+                    model: 'gpt-4o-mini',
                     messages: [
                         { role: 'user', content: userText },
                         { role: 'system', content: `You are a flirty 
@@ -123,16 +167,17 @@ class VoiceChat {
             
             // Step 3: Text to Speech
             this.setStatus('Converting response to speech...', 'processing');
+            const selectedVoice = this.voiceSelect.value;
             const speechResponse = await fetch('https://api.openai.com/v1/audio/speech', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${this.openAIKey}`,
+                    'Authorization': `Bearer ${apiKey}`,
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     model: 'tts-1',
                     input: aiText,
-                    voice: 'echo'
+                    voice: selectedVoice
                 })
             });
 
@@ -181,5 +226,4 @@ class VoiceChat {
 // Initialize the application
 document.addEventListener('DOMContentLoaded', async () => {
     const voiceChat = new VoiceChat();
-    await voiceChat.init();
 });

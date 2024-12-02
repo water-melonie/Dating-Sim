@@ -108,6 +108,7 @@
         a {
             font-size: 24px;
             font-weight: bold;
+            display: block;
         }
         div {
             margin: 10px;
@@ -119,14 +120,18 @@
 </head>
 <body>
     <h1>AI Voice Chat</h1>
-    
+        <p>
+            This is the audio implementation of our dating simulation. Type in the API key
+            and talk to the bot by pressing the start recording button. Select which AFrame environment
+            love interest you would want to talk with.
+        </p>
     <div class="api-key-container">
         <input type="password" id="apiKeyInput" placeholder="Enter your OpenAI API Key">
         <button id="saveApiKeyButton">Save API Key</button>
     </div>
 
     <div class="voice-selector">
-        Voice: 
+        Voice:
         <select id="voiceSelect">
             <option value="alloy">Alloy</option>
             <option value="echo">Echo</option>
@@ -142,7 +147,11 @@
         <button id="recordButton" disabled>Start Recording</button>
         <span id="statusIndicator" class="status-indicator"></span>
     </div>
-    <div><a href="aframe.html">AFrame Environment</a></div>
+    <div>
+        <a href="aframe.html">AFrame Environment (Male)</a>
+        <a href="">AFrame Environment (Female)</a>
+    </div>
+
 
     <script src="app.js"></script>
 </body>

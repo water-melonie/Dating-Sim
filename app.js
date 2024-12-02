@@ -34,15 +34,15 @@ class VoiceChat {
         if (apiKey) {
             // Basic validation of API key format
             if (apiKey.length < 20) {
-                this.setStatus('Invalid API key', 'error');
+                this.setStatus('Invalid API key. The love of your dreams is just one key away...', 'error');
                 return;
             }
 
             sessionStorage.setItem('openai-api-key', apiKey);
             this.enableRecording();
-            this.setStatus('API Key Saved Successfully', 'info');
+            this.setStatus('API Key Saved Successfully. True love starts with one little click!', 'info');
         } else {
-            this.setStatus('Please enter an API key', 'error');
+            this.setStatus("Please enter an API key. Unlock the door to your soulmate's heart...", 'error');
         }
     }
 

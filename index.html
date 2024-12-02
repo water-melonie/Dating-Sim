@@ -3,157 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Voice Chat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .chat-container {
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            max-height: 500px;
-            overflow-y: auto;
-        }
-        .message {
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 4px;
-        }
-        .user-message {
-            background-color: #e3f2fd;
-        }
-        .ai-message {
-            background-color: #f5f5f5;
-        }
-        #recordButton {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .recording {
-            background-color: #ff4444;
-            color: white;
-        }
-        .status-indicator {
-            display: inline-flex;
-            align-items: center;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 14px;
-            margin-left: 10px;
-        }
-        .processing {
-            background-color: #fff3cd;
-            color: #856404;
-        }
-        .loading-spinner {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin-right: 8px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .speaking-indicator {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background-color: #4CAF50;
-            border-radius: 50%;
-            margin-left: 8px;
-            animation: pulse 1s infinite;
-        }
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.4; }
-            100% { opacity: 1; }
-        }
-        .api-key-container {
-            display: flex;
-            margin-bottom: 20px;
-            gap: 10px;
-        }
-        #apiKeyInput {
-            flex-grow: 1;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        #saveApiKeyButton {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .voice-selector {
-            margin-top: 10px;
-        }
-        #voiceSelect {
-            padding: 8px;
-            margin-left: 10px;
-        }
-        a {
-            font-size: 24px;
-            font-weight: bold;
-            display: block;
-        }
-        div {
-            margin: 10px;
-        }
-        body {
-            background: #8adbcc;
-        }
-    </style>
+    <title>Love Connection: AI Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>AI Voice Chat</h1>
-        <p>
-            This is the audio implementation of our dating simulation. Type in the API key
-            and talk to the bot by pressing the start recording button. Select which AFrame environment
-            love interest you would want to talk with.
-        </p>
-    <div class="api-key-container">
-        <input type="password" id="apiKeyInput" placeholder="Enter your OpenAI API Key">
-        <button id="saveApiKeyButton">Save API Key</button>
-    </div>
+    <div class="game-window">
+        <div class="header">
+            <h1>💕 Love Connection: Chat with Alex 💕</h1>
+        </div>
+        
+        <div class="api-key-container">
+            <input type="password" id="apiKeyInput" placeholder="Love is calling~ Enter your key to answer ✨">
+            <button id="saveApiKeyButton">Unlock</button>
+        </div>
 
-    <div class="voice-selector">
-        Voice:
-        <select id="voiceSelect">
-            <option value="alloy">Alloy</option>
-            <option value="echo">Echo</option>
-            <option value="fable">Fable</option>
-            <option value="onyx">Onyx</option>
-            <option value="nova">Nova</option>
-            <option value="shimmer">Shimmer</option>
-        </select>
-    </div>
+        <div class="voice-selector">
+            Choose Your Ideal Voice: 
+            <select id="voiceSelect">
+                <option value="alloy">Alloy 🤖</option>
+                <option value="echo">Echo 🌊</option>
+                <option value="fable">Fable 📖</option>
+                <option value="onyx">Onyx 💎</option>
+                <option value="nova">Nova ✨</option>
+                <option value="shimmer">Shimmer ✨</option>
+            </select>
+        </div>
 
-    <div class="chat-container" id="chatContainer"></div>
-    <div class="controls">
-        <button id="recordButton" disabled>Start Recording</button>
-        <span id="statusIndicator" class="status-indicator"></span>
+        <div class="chat-container" id="chatContainer"></div>
+        <div class="controls">
+            <button id="recordButton" disabled>Your perfect connection awaits—just one key away...</button>
+            <span id="statusIndicator" class="status-indicator"></span>
+            <div class="links">
+                <a href="aframe.html">Go for a date?</a>
+                <a href="">AFrame Environment (Female)</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <a href="aframe.html">AFrame Environment (Male)</a>
-        <a href="">AFrame Environment (Female)</a>
-    </div>
-
-
     <script src="app.js"></script>
 </body>
 </html>
-

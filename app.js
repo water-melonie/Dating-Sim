@@ -97,7 +97,7 @@ class VoiceChat {
         this.mediaRecorder.start();
         this.recordButton.textContent = 'Stop Recording';
         this.recordButton.classList.add('recording');
-        this.setStatus('Recording...', 'processing');
+        this.setStatus('Listening closely...', 'processing');
     }
 
     stopRecording() {
@@ -105,7 +105,7 @@ class VoiceChat {
         this.mediaRecorder.stop();
         this.recordButton.textContent = 'Start Recording';
         this.recordButton.classList.remove('recording');
-        this.setStatus('Processing audio...', 'processing');
+        this.setStatus('Processing thoughts...', 'processing');
     }
 
     addSpeakingIndicator(messageDiv) {
@@ -128,7 +128,7 @@ class VoiceChat {
 
         try {
             // Step 1: Speech to Text
-            this.setStatus('Converting speech to text...', 'processing');
+            this.setStatus('Turning your words into writing...', 'processing');
             const transcriptionResponse = await fetch('https://api.openai.com/v1/audio/transcriptions', {
                 method: 'POST',
                 headers: {
@@ -142,7 +142,7 @@ class VoiceChat {
             this.addMessage(userText, 'user');
 
             // Step 2: Get AI Response
-            this.setStatus('Getting AI response...', 'processing');
+            this.setStatus('Waiting for a reply...', 'processing');
             const completionResponse = await fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
                 headers: {
@@ -166,7 +166,7 @@ class VoiceChat {
             const aiText = completionData.choices[0].message.content;
             
             // Step 3: Text to Speech
-            this.setStatus('Converting response to speech...', 'processing');
+            this.setStatus('Preparing to respond...', 'processing');
             const selectedVoice = this.voiceSelect.value;
             const speechResponse = await fetch('https://api.openai.com/v1/audio/speech', {
                 method: 'POST',
@@ -204,7 +204,7 @@ class VoiceChat {
             });
 
             await audio.play();
-            this.setStatus('AI is speaking...', 'processing');
+            this.setStatus('Alex is speaking...', 'processing');
 
         } catch (error) {
             console.error('Error processing audio:', error);
